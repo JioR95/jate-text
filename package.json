@@ -1,9 +1,8 @@
 {
-  "name": "jate-text",
+  "name": "jate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Root",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
@@ -21,8 +20,10 @@
   },
   "homepage": "https://github.com/JioR95/jate-text#readme",
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.1.1",
     "concurrently": "^7.5.0",
     "express": "^4.18.2",
+    "rollup": "^3.2.5",
     "webpack": "^5.75.0"
   }
 }

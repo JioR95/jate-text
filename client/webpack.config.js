@@ -24,9 +24,11 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swDest: 'service-worker',
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'Text Editor',
         short_name: 'JATE',
         description: 'Takes notes with JavaScript!',
@@ -68,8 +70,8 @@ module.exports = () => {
             options: {
               presets: [["@babel/preset-env", {targets: "defaults"}]],
             }
-          },
-        },
+          }
+        }
       ],
     },
   };

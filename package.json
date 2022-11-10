@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/JioR95/jate-text#readme",
   "dependencies": {
+    "bundle-js": "^1.0.3",
     "concurrently": "^7.5.0",
     "express": "^4.17.1",
     "html-webpack-plugin": "^5.5.0",
